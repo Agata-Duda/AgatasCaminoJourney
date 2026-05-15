@@ -267,6 +267,55 @@
       padding: 1.5rem;
     }
   }
+  /* DONATION SECTION */
+.donate-section {
+  margin-top: 4rem;
+}
+
+.donate-card {
+  background: white;
+  padding: 2.5rem;
+  border-radius: 24px;
+  box-shadow: 0 12px 35px rgba(0,0,0,0.10);
+  max-width: 900px;
+  margin: 0 auto;
+}
+
+.donate-card h2 {
+  margin-top: 0;
+  font-size: 2rem;
+  color: #6f009b; /* now black */
+  text-align: center; /* optional, but looks nicer */
+}
+
+.donate-card p {
+  font-size: 1.1rem;
+  line-height: 1.7;
+  color: #000000;
+  margin-bottom: 1.5rem;
+}
+
+.donate-button {
+  display: inline-block;
+  padding: 1rem 1.8rem;
+  background: #6f009b;
+  color: white;
+  font-weight: 600;
+  text-decoration: none;
+  border-radius: 14px;
+  font-size: 1.1rem;
+  transition: 0.25s ease;
+  box-shadow: 0 8px 22px rgba(184, 50, 128, 0.25);
+}
+
+.donate-button:hover {
+  background: #8e2563;
+  transform: translateY(-2px);
+}
+.h2{
+  text-align: center;
+}
+
 </style>
 
 <header
@@ -280,18 +329,64 @@
 
 <main class="content">
 
+  <section class="donate-section">
+  <div class="donate-card">
+
+    <h2>Support the Journey 💜</h2>
+
+    <p>
+      More than <strong>1 in 3 women in Ireland</strong> 35% have experienced
+      psychological, physical, or sexual abuse from an intimate partner.
+    </p>
+
+    <p>
+      On the 15th of May, I’ll be flying to Porto to walk roughly
+      <strong>270km of the Portuguese Coastal Camino de Santiago</strong> to raise
+      funds for <strong>Esker House Domestic Abuse Support Service</strong>.
+    </p>
+
+    <p>
+      This cause is deeply personal to me. I’m walking to raise awareness, to honour my mams strength, and to help
+      ensure more people find safety. I hope that by raising awarness, more people will find 
+      the strength and courage to ask for help.
+    </p>
+    <p>
+      Doing this for every person who has experienced abuse, and for those who continue to suffer in silence.
+      <br> Most of all, I'm doing it for my mam 💜
+    </p>
+
+    <p>
+      Esker House provides vital 24‑hour support to people experiencing domestic
+      violence, helping them find safety, strength, and a way forward. Every
+      donation helps them continue their life‑changing work. 
+      <br> If this journey resonates with you, please consider donating your spare change to support the vital work of Esker House.
+    </p>
+
+    <a
+      class="donate-button"
+      href="https://www.idonate.ie/fundraiser/agataduda1"
+      target="_blank"
+    >
+      Donate to Esker House
+    </a>
+
+  </div>
+</section>
+
+
   <section class="intro">
 
     <h2>Following the Camino</h2>
 
     <p>
-      Track my progress, photos, and adventures along the Camino journey
+      You can leave me a message of encouragement below 👇just scroll down a little 😊
+      You can also track my progress, photos, and adventures along the Camino journey
       through the live Polarsteps travel map.
     </p>
 
     <a
       class="follow-button"
-      href="https://www.polarsteps.com/AgataDuda/25701831-test"
+      href="https://www.polarsteps.com/AgataDuda/25036189-camino-de-santiago-from-porto"
       target="_blank">
 
       View Full Journey
@@ -323,7 +418,7 @@
       <h2>Send Me Some Support 💛</h2>
 
       <p>
-        Leave a message, encouragement, or Camino wisdom for the journey.
+        Leave me a message, encouragement, or some Camino wisdom for my journey!
       </p>
 
       <form class="support-form" (ngSubmit)="addMessage()">

@@ -78,7 +78,6 @@ export class App {
     const messageToSend = this.newMessage;
     this.newName = '';
     this.newMessage = '';
-    this.submitStatus = 'Sending...';
 
     const ref = collection(this.firestore, 'messages');
 
@@ -88,8 +87,6 @@ export class App {
       created: new Date()
     })
       .then((docRef) => {
-        console.log('Message written with id:', docRef.id);
-        this.submitStatus = 'Message sent!';
         // replace temporary message with actual one
         this.messages = this.messages.map(m => m.id === tempId ? { id: docRef.id, name: nameToSend || 'Anonymous', text: messageToSend } : m);
         try { this.cdr.markForCheck(); } catch (e) { /* ignore */ }
